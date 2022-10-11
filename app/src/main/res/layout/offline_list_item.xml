@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="5dp"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/space80"
+                        android:layout_height="80dp"
+                        android:layout_marginHorizontal="@dimen/text20"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/woman"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text20"
+                        android:layout_marginBottom="@dimen/space8">
+
+                        <ImageView
+                            android:id="@+id/first_img"
+                            android:layout_width="@dimen/space40"
+                            android:layout_height="@dimen/space40"
+                            android:layout_marginLeft="@dimen/space7"
+                            android:src="@drawable/woman"/>
+
+                        <ImageView
+                            android:id="@+id/sec_img"
+                            android:layout_width="@dimen/space40"
+                            android:layout_height="@dimen/space40"
+                            android:layout_toRightOf="@+id/first_img"
+                            android:src="@drawable/woman"/>
+
+                        <RelativeLayout
+                            android:layout_toRightOf="@+id/sec_img"
+                            android:layout_width="@dimen/space40"
+                            android:background="@color/black"
+                            android:layout_height="@dimen/space40">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:layout_centerInParent="true"
+                                android:text="+35"/>
+
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="8dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textNormal"
+                        android:fontFamily="@font/human"
+                        android:text="Jot Bhullar"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:fontFamily="@font/human"
+                        android:layout_marginTop="3dp"
+                        style="@style/textNormal"
+                        android:text="MS(OBG)fellowship in.."/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        style="@style/textHeading"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/human"
+                        android:layout_height="wrap_content"
+                        android:text="8+ Years exp"/>
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/human"
+                        android:textColor="@color/blue"
+                        android:text="Rs 350"/>
+                    <TextView
+                        style="@style/textNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/human"
+                        android:textColor="@color/appcolor"
+                        android:text="...more"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        style="@style/textNormal"
+                        android:background="@drawable/call_bg"
+                        android:padding="8sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:fontFamily="@font/human"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="8sp"
+                        android:text="@string/call"/>
+                    <TextView
+                        android:id="@+id/bokk_tv"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        style="@style/textNormal"
+                        android:padding="8sp"
+                        android:fontFamily="@font/human"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/book_bg"
+                        android:text="@string/book"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8sp"
+                        android:text="Omninos International"/>
+
+                    <TextView
+                        style="@style/textNormal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/human"
+                        android:layout_marginBottom="8dp"
+                        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                        android:text="Mohali" />
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

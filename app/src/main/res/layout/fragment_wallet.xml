@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".home.setting.WalletFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/space8"
+            android:padding="@dimen/space10"
+            android:layout_centerVertical="true"
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/black"
+            android:src="@drawable/back_arrow"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/space8"
+            android:padding="@dimen/space10"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_filters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/white"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_search_24"/>
+
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/human"
+            style="@style/textHeadingBold"
+            android:textColor="@color/black"
+            android:text="Wallet"/>
+    </RelativeLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/space10"
+        android:elevation="@dimen/space8"
+        android:layout_margin="@dimen/space20"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/share_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="@dimen/space10"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="@dimen/space30"
+                        android:layout_height="@dimen/space30"
+                        app:tint="@color/appcolor"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/wallet"/>
+
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textHeadingBold"
+                    android:fontFamily="@font/human"
+                    android:layout_marginTop="@dimen/space15"
+                    android:layout_toRightOf="@+id/share_rl"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/appcolor"
+                    android:text="Wallet Balance"/>
+                <TextView
+                    android:id="@+id/name_tv2"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textNormal"
+                    android:layout_below="@+id/name_tv"
+                    android:fontFamily="@font/human"
+                    android:layout_toRightOf="@+id/share_rl"
+                    android:text="Today,22 April "/>
+
+
+                <TextView
+                    android:background="@drawable/square_yellow_bg"
+                    android:id="@+id/share_tv"
+                    android:visibility="visible"
+                    android:layout_width="@dimen/space80"
+                    android:layout_height="wrap_content"
+                    style="@style/textNormal"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/space10"
+                    android:fontFamily="@font/human"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/yellow"
+                    android:padding="@dimen/space6"
+                    android:gravity="center_horizontal"
+                    android:text="Top Up "/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/space20"
+                android:layout_marginBottom="@dimen/space20"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/space25"
+                    android:layout_centerVertical="true"
+                    style="@style/textHeadingBold"
+                    android:layout_marginHorizontal="@dimen/space14"
+                    android:text="$ 1234.50"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/update_pro_btn"
+                    android:layout_width="@dimen/space100"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/btn_bg"
+                    android:text="@string/with_draw"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/textNormal"
+            android:text="Recent Activities"
+            android:padding="@dimen/space10"
+            android:layout_alignParentLeft="true"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            style="@style/textNormal"
+            android:text="View All"
+            android:textColor="@color/appcolor"
+            android:padding="@dimen/space10"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/wallet_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/wallet_list_item"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+
+
+</LinearLayout>

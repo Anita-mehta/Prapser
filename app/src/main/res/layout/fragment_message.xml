@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".home.consultant.MessageFragment">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:tint="@color/black"
+            android:src="@drawable/back_arrow"/>
+
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="@style/textHeadingBold"
+            android:text="@string/message"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/top_bar"
+        android:id="@+id/msg_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/message_list"
+        android:layout_above="@+id/bottom_relative"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginHorizontal="@dimen/space5">
+
+        <ImageView
+            android:id="@+id/img_plus"
+            android:layout_width="@dimen/space30"
+            android:layout_height="@dimen/space30"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:tint="@color/appcolor"
+            android:src="@drawable/ic_baseline_photo_camera_24" />
+
+
+        <ImageView
+            android:id="@+id/camera_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space10"
+            android:layout_toRightOf="@id/img_plus"
+            app:tint="@color/appcolor"
+            android:src="@drawable/paper_clip" />
+
+        <ImageView
+            android:id="@+id/img_gif"
+            android:layout_width="@dimen/space24"
+            android:layout_height="@dimen/space24"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space10"
+            android:layout_toRightOf="@id/camera_img" />
+
+<!--        <com.google.android.material.card.MaterialCardView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="@dimen/space10"-->
+<!--            android:layout_marginRight="@dimen/space10"-->
+<!--            android:layout_marginTop="@dimen/space10"-->
+<!--            android:layout_marginBottom="@dimen/space10"-->
+<!--            android:layout_toRightOf="@id/img_gif"-->
+<!--            app:cardCornerRadius="@dimen/space24">-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/img_gif"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/send_msg_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="@dimen/space10"
+                    android:hint="Write message"
+                    android:padding="@dimen/space10"
+                    android:singleLine="true"
+                    android:layout_toLeftOf="@+id/send_btn_img"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text16" />
+                <RelativeLayout
+                    android:id="@+id/send_btn_img"
+                    android:layout_width="@dimen/space30"
+                    android:layout_height="@dimen/space30"
+                    android:background="@drawable/green_bg"
+                    android:layout_marginHorizontal="@dimen/space8"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/text16"
+                        android:layout_height="@dimen/space16"
+                        android:background="@drawable/et_bg"
+                        android:layout_centerInParent="true"
+                        app:tint="@color/white"
+                        android:src="@drawable/paper_plane"/>
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

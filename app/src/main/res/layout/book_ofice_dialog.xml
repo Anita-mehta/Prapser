@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    android:elevation="8dp"
+    android:layout_margin="@dimen/space14"
+    app:cardCornerRadius="16sp"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space10"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cont_img"
+                android:layout_width="@dimen/space80"
+                android:layout_height="@dimen/space80"
+                android:src="@drawable/woman"/>
+
+            <TextView
+                android:id="@+id/con_nmae_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jass Virk"
+                style="@style/textNormal"
+                android:layout_marginTop="@dimen/space20"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:layout_toRightOf="@+id/cont_img"/>
+            <TextView
+                android:id="@+id/strategy_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strategy an option to book"
+                style="@style/textNormal"
+                android:layout_below="@+id/con_nmae_tv"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:layout_toRightOf="@+id/cont_img"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/space20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/phone_img"
+
+                android:layout_width="@dimen/space30"
+                android:layout_height="@dimen/space30"
+                android:background="@drawable/green_circle">
+                <ImageView
+                    android:layout_width="@dimen/space16"
+                    android:layout_height="@dimen/space16"
+                    android:layout_centerInParent="true"
+                    app:tint="@color/white"
+                    android:src="@drawable/ic_phone_call_button"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/phone_img"
+                android:layout_marginHorizontal="@dimen/space16"
+                android:text="@string/phn_cons"
+                style="@style/textHeading"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/space20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/physical_visit"
+
+                android:layout_width="@dimen/space30"
+                android:layout_height="@dimen/space30"
+                android:background="@drawable/green_circle">
+                <ImageView
+                    android:layout_width="@dimen/space16"
+                    android:layout_height="@dimen/space16"
+                    android:layout_centerInParent="true"
+                    app:tint="@color/white"
+                    android:src="@drawable/calendar"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/physical_visit"
+                android:layout_marginHorizontal="@dimen/space16"
+                android:text="@string/physicl_ivist"
+                style="@style/textHeading"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/cancel_btn"
+            android:elevation="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="@dimen/space40"
+            android:layout_below="@id/card"
+            android:background="@drawable/round_btn_bg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="@dimen/space25"
+            android:layout_marginBottom="@dimen/text18"
+            android:textColor="@color/white"
+            android:text="@string/cancel" />
+
+
+
+    </LinearLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

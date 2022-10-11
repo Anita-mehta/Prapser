@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.consultant.DoctorSeacrhFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:tint="@color/black"
+            android:src="@drawable/back_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="@style/textHeadingBold"
+            android:text="Currently Searching in"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/textHeading"
+            android:id="@+id/search_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:text="Not Selected"
+            android:layout_marginHorizontal="8dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_toRightOf="@+id/search_tv"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:tint="@color/black"
+            android:src="@drawable/ccp_ic_arrow_drop_down"/>
+    </RelativeLayout>
+
+    <EditText
+
+        android:id="@+id/searchEt"
+        android:background="@drawable/view_color_corners_bg"
+        style="@style/textNormal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/ic_baseline_keyboard_voice_24"
+        android:hint="Search Consultant"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:singleLine="true" />
+
+    <include layout="@layout/line_with_margin"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        style="@style/textHeading"
+        android:text="@string/specialist"/>
+    <include layout="@layout/line_with_margin"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/specialist_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/specialist_list_item"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+
+
+
+
+
+
+</LinearLayout>

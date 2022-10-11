@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.consultant.ConsultPaymentFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:tint="@color/black"
+            android:src="@drawable/back_arrow"/>
+
+        <TextView
+            style="@style/textHeadingBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/human"
+            android:layout_centerInParent="true"
+            android:text="@string/add_payment"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/appcolor"
+            android:layout_marginHorizontal="@dimen/text20"
+            style="@style/textHeadingBold"
+            android:text="@string/today"/>
+
+
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space20"
+                android:elevation="@dimen/space10"
+                android:layout_marginTop="@dimen/space15"
+                android:layout_marginHorizontal="@dimen/space6"
+                android:background="@drawable/et_bg_grey">
+
+                <ImageView
+                    android:id="@+id/creditcard"
+                    android:layout_width="@dimen/space20"
+                    android:layout_height="@dimen/space20"
+                    android:layout_centerVertical="true"
+                    app:tint="@color/appcolor"
+                    android:src="@drawable/credit_cards_payment"
+                    android:layout_marginLeft="@dimen/space8"
+                    android:layout_alignParentLeft="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/creditcard"
+                    style="@style/textNormal"
+                    android:fontFamily="@font/human"
+                    android:layout_marginLeft="@dimen/space20"
+                    android:text="@string/credit"/>
+
+                <ImageView
+                    android:layout_width="@dimen/space20"
+                    android:layout_height="@dimen/space20"
+                    android:layout_centerVertical="true"
+                    app:tint="@color/appcolor"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:layout_marginLeft="@dimen/space8"/>
+
+
+
+            </RelativeLayout>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/space10"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:elevation="@dimen/space20"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/space20"
+                    android:paddingTop="@dimen/space20"
+                    android:paddingRight="@dimen/space20"
+                    android:paddingBottom="@dimen/space40">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/textNormal"
+                            android:fontFamily="@font/human"
+                            android:layout_marginLeft="@dimen/space10" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/space8"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space10"
+                                style="@style/textNormal"
+                                android:singleLine="true"
+                                android:fontFamily="@font/human"
+                                android:text="@string/name"
+                                android:textSize="@dimen/space12" />
+
+                            <EditText
+                                style="@style/textNormal"
+                                android:layout_marginTop="@dimen/space10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/et_bg_grey"
+                                android:imeOptions="actionDone"
+                                android:hint="Omninos"
+                                android:fontFamily="@font/human"
+                                android:inputType="textPassword"
+                                android:padding="@dimen/space15"
+                                android:singleLine="true" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginRight="@dimen/space8"
+                            android:orientation="vertical">
+                            <TextView
+                                android:visibility="invisible"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space10"
+                                style="@style/textNormal"
+                                android:fontFamily="@font/human"
+                                android:textSize="@dimen/space12"
+                                android:text="CVV"/>
+
+                            <EditText
+                                style="@style/textNormal"
+                                android:layout_marginTop="@dimen/space10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/et_bg_grey"
+                                android:imeOptions="actionDone"
+                                android:padding="@dimen/space15"
+                                android:fontFamily="@font/human"
+                                android:hint="Solution"
+                                android:singleLine="true" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space10"
+                        style="@style/textNormal"
+                        android:fontFamily="@font/human"
+                        android:text="@string/card_umber"
+                        />
+
+                    <EditText
+                        android:id="@+id/et_password"
+                        style="@style/textNormal"
+                        android:layout_marginTop="@dimen/space10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/et_bg_grey"
+                        android:imeOptions="actionDone"
+                        android:fontFamily="@font/human"
+                        android:hint="1234 4231 1254 7896"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/space15"
+                        android:singleLine="true" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="2">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="@dimen/space10"
+                            android:layout_marginRight="@dimen/space8"
+                            android:orientation="vertical">
+                            <TextView
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space10"
+                                style="@style/textNormal"
+                                android:fontFamily="@font/human"
+                                android:singleLine="true"
+                                android:textSize="@dimen/space12" />
+
+                            <EditText
+                                style="@style/textNormal"
+                                android:layout_marginTop="@dimen/space10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/et_bg_grey"
+                                android:imeOptions="actionDone"
+                                android:hint="Expiry Date"
+                                android:fontFamily="@font/human"
+                                android:inputType="textPassword"
+                                android:padding="@dimen/space15"
+                                android:singleLine="true" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="@dimen/space10"
+                            android:layout_marginRight="@dimen/space8"
+                            android:orientation="vertical">
+                            <TextView
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/space10"
+                                style="@style/textNormal"
+                                android:fontFamily="@font/human"
+                                android:textSize="@dimen/space12"
+                                android:text="CVV"/>
+
+                            <EditText
+                                style="@style/textNormal"
+                                android:layout_marginTop="@dimen/space10"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/et_bg_grey"
+                                android:imeOptions="actionDone"
+                                android:inputType="textPassword"
+                                android:padding="@dimen/space15"
+                                android:fontFamily="@font/human"
+                                android:hint="CVV"
+                                android:singleLine="true" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space10"
+                        style="@style/textNormal"
+                        android:fontFamily="@font/human"
+                        android:text="@string/country"
+                        />
+
+                    <EditText
+                        style="@style/textNormal"
+                        android:layout_marginTop="@dimen/space10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/et_bg_grey"
+                        android:imeOptions="actionDone"
+                        android:hint="1234 4231 1254 7896"
+                        android:fontFamily="@font/human"
+                        android:inputType="textPassword"
+                        android:padding="@dimen/space15"
+                        android:singleLine="true" />
+
+
+                </LinearLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space14"
+                android:elevation="@dimen/space10"
+                android:background="@drawable/et_bg_grey"
+                android:layout_margin="@dimen/space20">
+
+                <ImageView
+                    android:id="@+id/Img"
+                    android:layout_width="@dimen/text20"
+                    android:layout_height="@dimen/text20"
+                    android:layout_centerVertical="true"
+                    app:tint="@color/appcolor"
+                    android:src="@drawable/money"
+                    android:layout_marginLeft="@dimen/space8"
+                    android:layout_alignParentLeft="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/Img"
+                    style="@style/textNormal"
+                    android:fontFamily="@font/human"
+                    android:layout_marginLeft="@dimen/space20"
+                    android:text="@string/cash"/>
+                <ImageView
+                    android:layout_width="@dimen/space14"
+                    android:layout_height="@dimen/space14"
+                    android:layout_centerVertical="true"
+                    app:tint="@color/grey"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_baseline_lens_24"
+                    android:layout_marginLeft="@dimen/space8"/>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space14"
+                android:elevation="@dimen/space10"
+                android:background="@drawable/et_bg_grey"
+                android:layout_margin="@dimen/space20">
+
+                <ImageView
+                    android:id="@+id/ceheque"
+                    android:layout_width="@dimen/space20"
+                    android:layout_height="@dimen/space20"
+                    android:layout_centerVertical="true"
+                    app:tint="@color/appcolor"
+                    android:src="@drawable/bank_check"
+                    android:layout_marginLeft="@dimen/space8"
+                    android:layout_alignParentLeft="true" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ceheque"
+                    style="@style/textNormal"
+                    android:fontFamily="@font/human"
+                    android:layout_marginLeft="@dimen/space20"
+                    android:text="@string/cheque"/>
+
+                <ImageView
+                    android:layout_width="@dimen/space14"
+                    android:layout_height="@dimen/space14"
+                    android:layout_centerVertical="true"
+                    app:tint="@color/grey"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_baseline_lens_24"
+                    android:layout_marginLeft="@dimen/space8"/>
+
+
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/pay_btn"
+                android:elevation="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/space25"
+                android:layout_below="@id/card"
+                android:background="@drawable/round_btn_bg"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/human"
+                android:layout_marginHorizontal="@dimen/space55"
+                android:layout_marginBottom="@dimen/space10"
+                android:textColor="@color/white"
+                android:text="@string/pay" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

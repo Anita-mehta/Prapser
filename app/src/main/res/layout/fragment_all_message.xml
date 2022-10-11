@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.setting.report.AllMessageFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/space8"
+            android:padding="@dimen/space10"
+            android:layout_centerVertical="true"
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/black"
+            android:src="@drawable/back_arrow"/>
+
+        <ImageView
+            android:visibility="visible"
+            android:layout_marginRight="@dimen/space8"
+            android:padding="@dimen/space10"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_filters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/black"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_search_24"/>
+
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/human"
+            style="@style/textHeadingBold"
+            android:textColor="@color/black"
+            android:text="@string/all_message"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/space10"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/support_rl"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/book_ll"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="@dimen/space8"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:elevation="8dp"
+                android:background="@drawable/green_bg"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/chat"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_below="@+id/book_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textNormal"
+                android:fontFamily="@font/human"
+                android:layout_centerHorizontal="true"
+                android:text="@string/support"/>
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rv_online_user"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/support_rl"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/online_user_list"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/space20"
+        android:id="@+id/rv_user_message"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/user_message_list"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/share_rl"
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/space10"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/mes_ll"
+                android:layout_width="@dimen/space60"
+                android:layout_height="@dimen/space60"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/yellow_bg"
+                android:elevation="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mesg_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:tint="@color/white"
+                    android:textSize="@dimen/space16"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"
+                    android:text="K" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textNormal"
+            android:layout_marginTop="@dimen/space25"
+            android:fontFamily="@font/human"
+            android:layout_toRightOf="@+id/share_rl"
+            android:layout_centerHorizontal="true"
+            android:text="Surbhi Thankur"/>
+
+
+        <TextView
+            android:id="@+id/share_tv"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/textNormal"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/space25"
+            android:fontFamily="@font/human"
+            android:layout_marginHorizontal="@dimen/space10"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/blue"
+            android:text="Invite"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+

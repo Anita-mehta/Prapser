@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".home.setting.report.ReportFragment">
+
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/space8"
+            android:padding="@dimen/space10"
+            android:layout_centerVertical="true"
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/black"
+            android:src="@drawable/back_arrow"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/space8"
+            android:padding="@dimen/space10"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_filters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:tint="@color/white"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_baseline_search_24"/>
+
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/human"
+            style="@style/textHeadingBold"
+            android:textColor="@color/black"
+            android:text="@string/profile"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/top_rl">
+        <RelativeLayout
+            android:id="@+id/ehr_rl_img"
+            android:layout_width="@dimen/space120"
+            android:layout_height="@dimen/space120"
+            android:layout_below="@+id/ehr_topBar"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space50"
+            android:background="@drawable/circle_layout_bg">
+
+            <ImageView
+                android:layout_width="@dimen/space60"
+                android:layout_height="@dimen/space60"
+                android:layout_centerInParent="true"
+                android:src="@drawable/otp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ehr_msg_tv"
+            style="@style/textHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ehr_rl_img"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space10"
+            android:fontFamily="@font/human"
+            android:padding="@dimen/space5"
+            android:text="@string/report_msg"/>
+
+        <LinearLayout
+            android:paddingLeft="@dimen/space20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:drawableLeft="@drawable/ic_baseline_check_24"
+                android:drawableTint="@color/black"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/space5"
+                android:id="@+id/mesg_one"
+                style="@style/textNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ehr_msg_tv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space10"
+                android:fontFamily="@font/human"
+                android:text="@string/never_lose_one"/>
+
+            <TextView
+                android:drawableLeft="@drawable/ic_baseline_check_24"
+                android:drawableTint="@color/black"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/space5"
+                android:id="@+id/mesg_two"
+                style="@style/textNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/check_one"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space10"
+                android:fontFamily="@font/human"
+                android:text="@string/never_lose_sec" />
+
+            <TextView
+                android:drawableLeft="@drawable/ic_baseline_check_24"
+                android:drawableTint="@color/black"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/space5"
+                android:id="@+id/mesg_three"
+                style="@style/textNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mesg_two"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/space10"
+                android:fontFamily="@font/human"
+                android:text="@string/share_msg" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/add_record_btn"
+             android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+             android:layout_marginHorizontal="@dimen/space20"
+            android:layout_marginBottom="@dimen/space20"
+             android:background="@drawable/btn_bg"
+            android:elevation="20dp"
+           android:text="Add  Reports"
+           android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".home.consultant.LabFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:elevation="@dimen/space8"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:tint="@color/black"
+            android:padding="8dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/back_arrow"/>
+
+
+
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="@style/textHeadingBold"
+            android:textColor="@color/blue"
+            android:text="@string/prasper"/>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/iv_filters_et"
+        android:background="@drawable/view_color_corners_bg"
+        style="@style/textNormal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space50"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/space8"
+        android:layout_toRightOf="@+id/back_arrow"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:elevation="@dimen/space8"
+        android:layout_marginBottom="20dp"
+        android:drawableTint="@color/blue"
+        android:drawableLeft="@drawable/ic_baseline_filter_alt_24"
+        android:drawablePadding="10dp"
+        android:hint="Distance, Price, Language "
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:singleLine="true" />
+
+    <EditText
+
+        android:id="@+id/searchEt"
+        android:background="@drawable/view_color_corners_bg"
+        style="@style/textNormal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:drawablePadding="10dp"
+        android:hint="@string/serach_notairs"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/offline_consult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@color/appcolor"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/ofline_consult"
+                android:layout_width="wrap_content"
+                android:text="@string/home1"
+                style="@style/textHeading"
+                android:fontFamily="@font/human"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="@string/service"
+                style="@style/textHeading"
+                android:textColor="@color/white"
+                android:fontFamily="@font/human"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:text="chat,phone,Video"
+                style="@style/textHeading"
+                android:fontFamily="@font/human"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="@dimen/space8"
+                android:layout_height="wrap_content"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/online_consult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:background="@color/grey"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/online_consu"
+                    android:layout_width="wrap_content"
+                    style="@style/textHeading"
+                    android:layout_gravity="center"
+                    android:text="@string/physical"
+                    android:fontFamily="@font/human"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/online_tv"
+                    android:layout_width="wrap_content"
+                    android:text="@string/phy_appoitment"
+                    android:fontFamily="@font/human"
+                    style="@style/textHeading"
+                    android:layout_below="@+id/online_consu"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:text="chat,phone,Video"
+                    style="@style/textHeading"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/human"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/online_tv"
+                    android:textSize="@dimen/space8"
+                    android:layout_height="wrap_content"/>
+
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:layout_width="@dimen/space30"
+                    android:layout_height="@dimen/space30"
+                    android:background="@drawable/white_round_bg"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right">
+
+                    <ImageView
+                        android:id="@+id/video_btn"
+                        android:layout_width="@dimen/space20"
+                        android:layout_height="@dimen/space20"
+                        android:layout_centerInParent="true"
+                        app:tint="@color/blue"
+                        android:src="@drawable/ic_baseline_videocam_24"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
+
+
+
+
+
+
+</LinearLayout>

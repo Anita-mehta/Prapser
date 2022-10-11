@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space10"
+        android:layout_marginHorizontal="@dimen/space10"
+        android:layout_width="@dimen/space70"
+        android:layout_height="@dimen/space70">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/space70"
+            android:layout_height="@dimen/space70"
+            android:gravity="center"
+            android:id="@+id/online_user"
+            android:src="@drawable/men" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_online_dot"
+            android:layout_marginRight="@dimen/space10"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <TextView
+        style="@style/textNormal"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/human"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_online_username"
+        android:text="Happy" />
+</LinearLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/space10"
+        app:cardCornerRadius="@dimen/space10"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.8"
+                    android:layout_margin="@dimen/space6"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/image"
+                        android:layout_width="@dimen/space80"
+                        android:layout_height="@dimen/space80"
+                        app:civ_border_color="@color/appcolor"
+                        app:civ_border_width="@dimen/space2"
+                        android:src="@drawable/teacher_img"/>
+                    <TextView
+                        android:layout_below="@+id/image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        style="@style/textNormal"
+                        android:gravity="center_horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="@dimen/text12"
+                        android:fontFamily="@font/human"
+                        android:text="English "/>
+
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1.7"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        style="@style/textNormal"
+                        android:layout_marginTop="@dimen/space20"
+                        android:fontFamily="@font/human"
+                        android:text="Lorem Lpsum,MD "/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        style="@style/textNormal"
+                        android:textSize="@dimen/text12"
+                        android:fontFamily="@font/human"
+                        android:text="Internal Medicine Menio Medical clinic "/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        style="@style/textNormal"
+                        android:textSize="@dimen/text12"
+                        android:fontFamily="@font/human"
+                        android:text="1300 Crane St.Mento Park,CA 94025"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        style="@style/textHeadingBold"
+                        android:textSize="@dimen/text12"
+                        android:fontFamily="@font/human"
+                        android:text="$ 150"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/option_popup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <ImageView
+                        android:layout_width="@dimen/space30"
+                        android:layout_height="@dimen/space30"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="@dimen/space20"
+                        android:src="@drawable/ic_baseline_more_vert_24"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/space20"
+                android:weightSum="3">
+                <LinearLayout
+                    android:layout_width="@dimen/space0"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space5"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        style="@style/textNormal"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/human"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text12"
+                        android:text="@string/appoitment"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        style="@style/textNormal"
+                        android:layout_gravity="center_horizontal"
+                        android:fontFamily="@font/human"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text12"
+                        android:gravity="center_horizontal"
+                        android:text="19 April-2021"/>
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    style="@style/textNormal"
+                    android:textColor="@color/white"
+                    android:background="@drawable/round_btn_bg"
+                    android:layout_gravity="center_vertical"
+                    android:fontFamily="@font/human"
+                    android:padding="@dimen/space8"
+                    android:textSize="@dimen/text12"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:text="2.00 PM" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <RelativeLayout
+                        android:id="@+id/book_ll"
+                        android:layout_width="@dimen/space40"
+                        android:layout_height="@dimen/space40"
+                        android:gravity="center_horizontal"
+                        android:elevation="8dp"
+                        android:layout_marginLeft="@dimen/space20"
+                        android:background="@drawable/green_bg"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/space20"
+                            android:layout_height="@dimen/space20"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_baseline_videocam_24"
+                            app:tint="@color/white" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/message_ll"
+                        android:layout_width="@dimen/space40"
+                        android:layout_height="@dimen/space40"
+                        android:gravity="center_horizontal"
+                        android:layout_toRightOf="@+id/book_ll"
+                        android:elevation="8dp"
+                        android:layout_marginLeft="@dimen/space8"
+                        android:background="@drawable/green_bg"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/space20"
+                            android:layout_height="@dimen/space20"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/chat"
+                            app:tint="@color/white" />
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/call_ll"
+                        android:layout_width="@dimen/space40"
+                        android:layout_height="@dimen/space40"
+                        android:gravity="center_horizontal"
+                        android:elevation="8dp"
+                        android:layout_toRightOf="@+id/message_ll"
+                        android:layout_marginLeft="@dimen/space8"
+                        android:background="@drawable/green_bg"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/space20"
+                            android:layout_height="@dimen/space20"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_phone_call_button"
+                            app:tint="@color/white" />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</LinearLayout>

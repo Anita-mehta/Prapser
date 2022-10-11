@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    android:elevation="8dp"
+    app:cardCornerRadius="16sp"
+    app:cardUseCompatPadding="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/checkImg"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="@dimen/space50"
+                android:layout_height="@dimen/space50"
+                android:elevation="@dimen/space10"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/space6"
+                android:src="@drawable/checked"/>
+            <TextView
+                android:id="@+id/thank_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/checkImg"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="@string/thank_you"
+                android:layout_marginTop="@dimen/space25"
+                style="@style/textHeadingBold"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <RelativeLayout
+                android:id="@+id/msg2_tv"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_constraintTop_toBottomOf="@+id/thank_tv">
+                <ImageView
+                    android:id="@+id/image_one"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="-28dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dialog_cut_shape"/>
+                <ImageView
+                    android:id="@+id/image_two"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="-28dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/dialog_cut_shape"/>
+
+                <TextView
+                    android:id="@+id/mes1_tv"
+                    android:layout_marginTop="@dimen/space20"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/image_one"
+                    android:layout_toLeftOf="@+id/image_two"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="We have received your request and confirm \n you after few minutes."
+                    style="@style/textNormal"
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:layout_below="@+id/mes1_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:text="@string/after_few_minutes"
+                    style="@style/textNormal" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/refrence_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/refrenceid"
+                app:layout_constraintTop_toBottomOf="@+id/msg2_tv"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="@dimen/space14"
+                app:layout_constraintRight_toRightOf="parent"
+                style="@style/textNormal"
+                />
+
+
+
+            <LinearLayout
+                app:layout_constraintTop_toBottomOf="@+id/refrence_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <include layout="@layout/line_with_margin"/>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/date_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space8"
+                        android:layout_marginHorizontal="@dimen/space8"
+                        android:text="@string/date"/>
+                    <TextView
+                        android:id="@+id/dateTV2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space8"
+                        android:layout_below="@+id/date_tv"
+                        style="@style/textNormal"
+                        android:layout_marginHorizontal="@dimen/space8"
+                        android:text="Tue,07 jan,2021"/>
+                    <TextView
+                        android:id="@+id/appt_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space8"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginHorizontal="@dimen/space8"
+                        android:text="@string/appp_time"/>
+                    <TextView
+                        android:id="@+id/time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/appt_tv"
+                        android:layout_marginTop="@dimen/space8"
+                        android:layout_alignParentRight="true"
+                        style="@style/textNormal"
+                        android:layout_marginHorizontal="@dimen/space8"
+                        android:text="9:00 AM"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/space20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/to_tv"
+                        android:layout_width="wrap_content"
+                        android:text="To"
+                        android:layout_marginHorizontal="@dimen/space8"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/name_tv"
+                        android:layout_width="wrap_content"
+                        android:text="Jass Virk"
+                        style="@style/textNormal"
+                        android:layout_below="@+id/to_tv"
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_marginHorizontal="@dimen/space8"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/consu_tv"
+                        android:layout_below="@+id/name_tv"
+                        android:layout_width="wrap_content"
+                        android:text="Consultant"
+                        android:layout_marginHorizontal="@dimen/space8"
+                        android:layout_height="wrap_content"/>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/space50"
+                        android:layout_height="@dimen/space50"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="@dimen/space10"
+                        android:src="@drawable/woman"/>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/space30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fessTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space8"
+                        android:layout_marginHorizontal="@dimen/space8"
+                        android:text="@string/date"/>
+                    <TextView
+                        android:id="@+id/feesPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space8"
+                        android:layout_below="@+id/fessTv"
+                        style="@style/textNormal"
+                        android:layout_marginHorizontal="@dimen/space8"
+                        android:text="$ 30.40per/session"/>
+                    <TextView
+                        android:id="@+id/cons_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space8"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginHorizontal="@dimen/space8"
+                        android:text="@string/appp_time"/>
+                    <TextView
+                        android:id="@+id/type_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/cons_type"
+                        android:layout_marginTop="@dimen/space8"
+                        android:layout_alignParentRight="true"
+                        style="@style/textNormal"
+                        android:layout_marginHorizontal="@dimen/space8"
+                        android:text="Video"/>
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/thanks_btn"
+                    android:elevation="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/space40"
+                    android:layout_below="@id/card"
+                    android:background="@drawable/round_btn_bg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginHorizontal="@dimen/space25"
+                    android:layout_marginBottom="@dimen/text18"
+                    android:textColor="@color/white"
+                    android:text="@string/thanks" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>

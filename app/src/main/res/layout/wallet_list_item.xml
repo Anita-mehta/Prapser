@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/wallet_user_img"
+                    android:layout_width="@dimen/space60"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/space10"
+                    android:layout_height="@dimen/space60"
+                    android:src="@drawable/men"/>
+
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textNormal"
+                    android:layout_marginTop="@dimen/space25"
+                    android:fontFamily="@font/human"
+                    android:layout_toRightOf="@+id/wallet_user_img"
+                    android:layout_centerHorizontal="true"
+                    android:text="Surbhi Thankur"/>
+                <TextView
+                    android:id="@+id/name_tv2"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textNormal"
+                    android:layout_below="@+id/name_tv"
+                    android:fontFamily="@font/human"
+                    android:layout_toRightOf="@+id/wallet_user_img"
+                    android:text="Money Sent"/>
+
+
+                <TextView
+                    android:id="@+id/share_tv"
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textNormal"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/space25"
+                    android:fontFamily="@font/human"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/black"
+                    android:text="$  10.22"/>
+                <TextView
+                    android:visibility="visible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textNormal"
+                    android:layout_below="@+id/share_tv"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/space4"
+                    android:fontFamily="@font/human"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/greyDark"
+                    android:text="1.30 PM"/>
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <include  layout="@layout/line_with_margin"/>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/space10"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/textNormal"
+        android:text="Add a record"
+        android:layout_margin="@dimen/space10"
+        android:padding="@dimen/space10"
+        android:fontFamily="@font/human"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take a photo"
+        android:layout_marginHorizontal="@dimen/space16"
+        android:fontFamily="@font/human"
+        style="@style/textNormal"
+        android:drawablePadding="@dimen/space8"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/ic_baseline_photo_camera_24"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload from gallery"
+        android:layout_marginHorizontal="@dimen/space16"
+        android:fontFamily="@font/human"
+        style="@style/textNormal"
+        android:layout_marginTop="@dimen/space10"
+        android:drawablePadding="@dimen/space8"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/gallery"/>
+    <TextView
+        android:id="@+id/upload_file_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Files"
+        android:layout_marginHorizontal="@dimen/space16"
+        android:fontFamily="@font/human"
+        style="@style/textNormal"
+        android:layout_marginTop="@dimen/space10"
+        android:drawablePadding="@dimen/space8"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/space30"
+        android:drawableLeft="@drawable/document_img"/>
+
+</LinearLayout>

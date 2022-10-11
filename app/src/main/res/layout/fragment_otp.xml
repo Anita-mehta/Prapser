@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".home.consultant.OtpFragment">
+
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:background="@color/light_blue">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="25dp"
+                   android:gravity="center_horizontal"
+                   android:layout_marginHorizontal="20dp"
+                   style="@style/textNormal"
+                   android:layout_gravity="center_horizontal"
+                   android:text="@string/mesg_otp" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:gravity="center_horizontal"
+                   android:layout_marginTop="6dp"
+                   android:layout_marginHorizontal="20dp"
+                   style="@style/textNormal"
+                   android:layout_gravity="center_horizontal"
+                   android:text="@string/phone_nume_msg" />
+
+               <ImageView
+                   android:layout_width="150dp"
+                   android:layout_height="150dp"
+                   android:layout_marginVertical="20dp"
+                   android:layout_gravity="center_horizontal"
+                   android:src="@drawable/otp"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_marginTop="12dp"
+               android:layout_centerInParent="true"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:padding="15dp">
+
+
+
+               <in.aabhasjindal.otptextview.OtpTextView
+                   android:id="@+id/otpTextView"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   app:bar_enabled="true"
+                   app:bar_height="0dp"
+                   app:height="50dp"
+                   app:hide_otp="false"
+                   android:layout_marginTop="20dp"
+                   app:length="4"
+                   app:otp_box_background="@drawable/et_bg"
+                   app:otp_text_size="15dp"
+                   app:width="50dp" />
+
+
+               <TextView
+                   android:id="@+id/txt_number"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginVertical="20dp"
+                   android:gravity="center_horizontal"
+                   style="@style/textNormal"
+                   android:text="@string/please_enter_code" />
+               <TextView
+                   android:id="@+id/resend_code_tv"
+                   android:layout_width="120dp"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:textAlignment="center"
+                   android:padding="10dp"
+                   style="@style/textNormal"
+                   android:text="@string/resend_code" />
+
+           </LinearLayout>
+           <androidx.appcompat.widget.AppCompatButton
+               android:layout_alignParentBottom="true"
+               android:id="@+id/otp_button"
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/verifyandsingnup"
+               android:layout_marginBottom="30dp"
+               android:textColor="@color/white"
+               android:textAllCaps="false"
+               android:layout_marginHorizontal="20dp"
+               android:background="@drawable/btn_bg"/>
+
+       </LinearLayout>
+   </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

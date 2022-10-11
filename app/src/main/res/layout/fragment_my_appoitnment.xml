@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home.aapointment.MyAppoitnmentFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space50"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/space20"
+        android:layout_marginRight="@dimen/space20"
+        android:layout_marginTop="@dimen/space14"
+        android:background="@drawable/corner_green_round"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/upcoming_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_green_corner"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            style="@style/textNormal"
+            android:fontFamily="@font/human"
+            android:padding="@dimen/space8"
+            android:textColor="@color/white"
+            android:text="@string/upcoming"/>
+
+        <TextView
+            android:id="@+id/past_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fontFamily="@font/human"
+            style="@style/textNormal"
+            android:padding="@dimen/space8"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="@string/past"/>
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
+
+
+</LinearLayout>

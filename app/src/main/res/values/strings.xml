@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">Prapser</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="please_enter_code"> Please enter the 4 digit code send to you at +91-9234567890</string>
+    <string name="resend_code">Resend OTP</string>
+    <string name="mesg_otp">A message has been sent to:</string>
+    <string name="phone_nume_msg">+91 6283987564(Edit)</string>
+    <string name="verifyandsingnup">Verify and sign up</string>
+    <string name="profile">Profile</string>
+    <string name="skip">Skip</string>
+    <string name="complete_profile_msg">Complete your profile to sign_up and recieve your gift in the prasper wallet</string>
+    <string name="name">Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_your_last_name">Enter last name</string>
+    <string name="email">Email</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="gender">Gender</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="prasper">Prapser</string>
+    <string name="categories">Categories</string>
+    <string name="doctors">Doctors</string>
+    <string name="appoitment">MY APPOITMENTS</string>
+    <string name="home">HOME</string>
+    <string name="ehr">EHR</string>
+    <string name="setting">SETTINGS</string>
+    <string name="specialist">Specialist</string>
+    <string name="consutant">Consultants</string>
+    <string name="offline_consul">Consultant\'s </string>
+    <string name="offline">Office </string>
+    <string name="online">Online </string>
+    <string name="online_consult"> Consultation</string>
+    <string name="call">CALL</string>
+    <string name="book">BOOK</string>
+    <string name="consutant1">CONSULT</string>
+    <string name="cons_spe">Strategy Const Speaciality</string>
+    <string name="chat">Chat</string>
+    <string name="call1">Call</string>
+    <string name="video_call">Video Call</string>
+    <string name="book1">Book</string>
+    <string name="experince">Experince</string>
+    <string name="education">Education</string>
+    <string name="language">Languages</string>
+    <string name="lorem">"Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book. "</string>
+    <string name="personla_info">Personal Information</string>
+    <string name="working_address">Working Address</string>
+    <string name="revier">Reviewer(230)</string>
+    <string name="message">Message</string>
+    <string name="calling">Calling...</string>
+    <string name="user">Omninos Solution</string>
+    <string name="calling1">Calling</string>
+    <string name="select_time_slot">Select Time Slot</string>
+    <string name="today">Today</string>
+    <string name="book_app">Book Appointment</string>
+    <string name="omninos_internayional">Omninos International</string>
+    <string name="who_is_the_perosn">Who is the Person?</string>
+    <string name="confirm">Confirm</string>
+    <string name="card_umber">Card Number</string>
+    <string name="country">Country</string>
+    <string name="cash">Cash</string>
+    <string name="cheque">Cheque</string>
+    <string name="pay">Pay</string>
+    <string name="credit">Credit Card</string>
+    <string name="add_payment">Add Payment</string>
+    <string name="confirmed">Payment Confirmend</string>
+    <string name="thank_you">THANK YOU</string>
+    <string name="recieved_msg">"We have received your request and confirm you after few minutes. "</string>
+    <string name="after_few_minutes">you after few minutes.</string>
+    <string name="refrenceid">REFERENCE  ID <b>mqidjj45k6</b></string>
+    <string name="date">Date</string>
+    <string name="appp_time">APP TIME</string>
+    <string name="thanks">OK, Thanks</string>
+    <string name="phn_cons">Phone Consultation</string>
+    <string name="physicl_ivist">Physical Visit</string>
+    <string name="cancel">Cancel</string>
+    <string name="lawer">Lawyer\'s</string>
+    <string name="accountnat">Accountnat\'s</string>
+    <string name="ehr_msg">All your medical reports in one place</string>
+    <string name="never_lose">Never lose your medical records</string>
+    <string name="never_lose_sec">Access prescriptions,reports and more,on the go</string>
+    <string name="searc_electrician">Search Electrician</string>
+    <string name="change">CHANGE</string>
+    <string name="home_service">Home Service</string>
+    <string name="teacher">Teacher\'s</string>
+    <string name="search_carWash">Search Car Wash Station</string>
+    <string name="apply">Apply</string>
+    <string name="psychologist">Psychologist\'s</string>
+    <string name="architecture">Architecture</string>
+    <string name="architect">Architect\'s</string>
+    <string name="online_consult1">Online Consultation</string>
+    <string name="serach_notairs">Search Notaires</string>
+    <string name="search_therapist">Search therapist</string>
+    <string name="save">Save</string>
+    <string name="upcoming">Upcoming</string>
+    <string name="past">Past</string>
+    <string name="sugartest">Sugar Test</string>
+    <string name="haemoglobin">Haemoglobin</string>
+    <string name="tlc">TLC/DLC</string>
+    <string name="platelets">Platelets</string>
+    <string name="add_new_record">Add a new Record</string>
+    <string name="add_previous_rec">Add a Previous Record</string>
+    <string name="doctor">Doctor\'s</string>
+    <string name="settings">Settings</string>
+    <string name="appointments">Appointments</string>
+    <string name="report">Reports</string>
+    <string name="refer_friend">Refer a Friend</string>
+    <string name="wallet">Wallet</string>
+    <string name="terms_condition">Terms and Conditions</string>
+    <string name="log_out">Log Out</string>
+    <string name="invite_msg">Invite friend on Prapser</string>
+    <string name="invite_msg_frnd"><![CDATA[You\'ll earn $20 cashback when they make their first Payment. T&Cs apply.]]></string>
+    <string name="with_draw">withdraw</string>
+    <string name="lorem_msg">"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of \"de Finibus Bonorum et Malorum\" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, \"Lorem ipsum dolor sit amet..\", comes from a line in section 1.10.32.  The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from \"de Finibus Bonorum et Malorum\" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.  "</string>
+    <string name="report_msg">All your  reports in one place</string>
+    <string name="never_lose_one">Never lose your records</string>
+    <string name="share_msg">Share your records</string>
+    <string name="laywer_reports">" Lawyer Reports"</string>
+    <string name="architect_report">Architect Reports</string>
+    <string name="phusy_report">Physiotherapist Reports</string>
+    <string name="consul_reports">Consultant Reports</string>
+    <string name="all_message">All Messages</string>
+    <string name="support">Support</string>
+    <string name="Laboratary">Laboratary</string>
+    <string name="filter">Filters</string>
+    <string name="service">Service</string>
+    <string name="physical">Physical</string>
+    <string name="phy_appoitment">Appointment</string>
+    <string name="home1">Home</string>
+    <string name="search_teacher">Saarch Teacher</string>
+    <string name="seacrh_plumber">Search Plumber</string>
+    <string name="upload_your_ehr">Upload your EHR</string>
+
+    <string-array name="country_array">
+                
+        <item>Denmark</item>
+                
+        <item>Faroe Islands</item>
+                
+        <item>Finland</item>
+                
+        <item>Iceland</item>
+                
+        <item>Norway</item>
+                
+        <item>Svalbard and Jan Mayen</item>
+                
+        <item>Sweden</item>
+            
+    </string-array>
+     
+</resources>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".home.consultant.ProfileFragment">
+    <RelativeLayout
+        android:id="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="@dimen/space40"
+            android:layout_height="@dimen/space40"
+            android:padding="@dimen/space8"
+            app:tint="@color/black"
+            android:src="@drawable/back_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            style="@style/textHeadingBold"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/human"
+            android:text="@string/profile"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/top_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space8"
+            android:layout_margin="@dimen/space20">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/user_image"
+                    app:civ_border_color="@color/appcolor"
+                    app:civ_border_width="@dimen/space2"
+                    android:padding="@dimen/space8"
+                    android:layout_width="@dimen/space100"
+                    android:layout_height="@dimen/space100"
+                    android:src="@drawable/doc_img"/>
+
+                <TextView
+                    android:id="@+id/name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/human"
+                    style="@style/textHeading"
+                    android:layout_marginTop="@dimen/space30"
+                    android:gravity="center_horizontal"
+                    android:layout_toRightOf="@+id/user_image"
+                    android:text="Omninos"/>
+
+                <include layout="@layout/line_with_margin"
+                    android:id="@+id/line_tv"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/name_tv"
+                    android:layout_marginLeft="@dimen/space10"
+                    android:layout_toRightOf="@+id/user_image"/>
+                <TextView
+                    android:id="@+id/email_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/human"
+                    style="@style/textHeading"
+                    android:layout_below="@+id/line_tv"
+                    android:layout_marginBottom="@dimen/space20"
+                    android:gravity="center_horizontal"
+                    android:layout_toRightOf="@+id/user_image"
+                    android:text="International"/>
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textNormal"
+                    android:padding="@dimen/space8"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/human"
+                    android:text="Mobile Number"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/space8"
+                    android:fontFamily="@font/human"
+                    android:layout_margin="@dimen/space8"
+                    android:hint="+91 6283937809"
+
+                    />
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/space8"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textNormal"
+                    android:padding="@dimen/space8"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/human"
+                    android:text="Gender"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/human"
+                    android:padding="@dimen/space8"
+                    android:layout_margin="@dimen/space8"
+                    android:hint="Female"
+                    />
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/space8"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textNormal"
+                    android:padding="@dimen/space8"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/human"
+                    android:text="Date of Birth"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/space8"
+                    android:fontFamily="@font/human"
+                    android:layout_margin="@dimen/space8"
+                    android:hint="16Aug-2002"
+                    />
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/space8"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textNormal"
+                    android:padding="@dimen/space8"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/human"
+                    android:text="Email ID"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/space8"
+                    android:layout_margin="@dimen/space8"
+                    android:fontFamily="@font/human"
+                    android:hint="omninos123@gmail.com"
+                    />
+
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/contnue_btn"
+        android:elevation="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/space25"
+        android:fontFamily="@font/human"
+        android:background="@drawable/round_btn_bg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="@dimen/space25"
+        android:layout_marginBottom="@dimen/space50"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:text="@string/save" />
+
+
+
+
+</RelativeLayout>

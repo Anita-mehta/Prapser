@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".home.consultant.BookAppoitmentFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:tint="@color/black"
+            android:src="@drawable/back_arrow"/>
+
+        <TextView
+            style="@style/textHeadingBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/book_app"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/appcolor"
+            android:layout_marginHorizontal="@dimen/text20"
+            style="@style/textHeadingBold"
+            android:text="@string/today"/>
+
+
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="@dimen/space80"
+                        android:layout_height="@dimen/space80"
+                        android:layout_margin="@dimen/space10"
+                        android:src="@drawable/woman">
+
+                    </de.hdodenhof.circleimageview.CircleImageView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textHeading"
+                        android:fontFamily="@font/human"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        android:layout_marginTop="@dimen/text20"
+                        android:text="Jot Bhullar"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textNormal"
+                        android:fontFamily="@font/human"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        android:layout_marginTop="@dimen/space4"
+                        android:text="Strategy Cons.Specialist"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/textNormal"
+                        android:fontFamily="@font/human"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        android:layout_marginTop="@dimen/space4"
+                        android:text="Tue, 07 Jab 2021, 9:30Am"/>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <include layout="@layout/line_with_margin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:layout_marginTop="@dimen/space10"
+                android:fontFamily="@font/human"
+                android:text="@string/working_address"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space3"
+                style="@style/textHeading"
+                android:fontFamily="@font/human"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:text="@string/omninos_internayional"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space3"
+                android:fontFamily="@font/human"
+                android:layout_marginHorizontal="@dimen/space10"
+                android:text="@string/working_address"/>
+
+
+            <include layout="@layout/line_with_margin"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text12"
+                android:fontFamily="@font/human"
+                android:text="@string/who_is_the_perosn"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/add_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginTop="@dimen/space8"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        android:background="@drawable/circle_layout_bg_withou_color">
+
+                        <ImageView
+                            android:id="@+id/cat_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_baseline_add_24"
+                            app:tint="@color/appcolor" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:id="@+id/cat_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        style="@style/textNormal"
+                        android:fontFamily="@font/human"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/user_img"
+                        android:text="carlos"/>
+
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/user_rv"
+                    android:layout_toRightOf="@+id/add_rl"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/user_list_item"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+            <include layout="@layout/line_with_margin"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text12"
+                android:fontFamily="@font/human"
+                android:text="@string/upload_your_ehr"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/add_ehr_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <RelativeLayout
+                        android:id="@+id/add_ehr_rl_tv"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginTop="@dimen/space8"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginHorizontal="@dimen/space10"
+                        android:background="@drawable/circle_layout_bg_withou_color">
+
+                        <ImageView
+                            android:id="@+id/plus_img"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/ic_baseline_add_24"
+                            app:tint="@color/appcolor" />
+
+                    </RelativeLayout>
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/ehr_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        style="@style/textNormal"
+                        android:fontFamily="@font/human"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/user_img"
+                        android:text="carlos"/>
+
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/ehr_rv"
+                    android:layout_toRightOf="@+id/add_ehr_rl"
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    tools:listitem="@layout/user_list_item"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Write here...."
+                style="@style/textNormal"
+                android:fontFamily="@font/human"
+                android:layout_margin="@dimen/space10"
+                android:background="@drawable/et_bg_grey"
+                android:padding="@dimen/space30"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/contnue_btn"
+                android:elevation="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="@dimen/space25"
+                android:layout_below="@id/card"
+                android:fontFamily="@font/human"
+                android:background="@drawable/round_btn_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="@dimen/space25"
+                android:layout_marginBottom="@dimen/space10"
+                android:textColor="@color/white"
+                android:text="@string/confirm" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

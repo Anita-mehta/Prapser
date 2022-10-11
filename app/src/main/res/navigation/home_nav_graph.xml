@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph.xml"
+    app:startDestination="@id/homeFragmnet">
+
+    <fragment
+        android:id="@id/homeFragmnet"
+        android:name="com.prapser.prapser.fragmnets.HomeFragmnet"
+        android:label="fragment_home_fragmnet"
+        tools:layout="@layout/fragment_home_fragmnet" >
+        <action
+            android:id="@+id/action_homeFragmnet_to_doctorSeacrhFragment"
+            app:destination="@id/doctorSeacrhFragment" />
+        <action
+            android:id="@+id/action_homeFragmnet_to_carWashFragment"
+            app:destination="@id/carWashFragment" />
+        <action
+            android:id="@+id/action_homeFragmnet_to_salonFragment"
+            app:destination="@id/salonFragment" />
+        <action
+            android:id="@+id/action_homeFragmnet_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorSeacrhFragment"
+        android:name="com.prapser.prapser.home.consultant.DoctorSeacrhFragment"
+        android:label="fragment_doctor_seacrh"
+        tools:layout="@layout/fragment_doctor_seacrh" >
+        <action
+            android:id="@+id/action_doctorSeacrhFragment_to_consultantFragment"
+            app:destination="@id/consultantFragment" />
+        <action
+            android:id="@+id/action_doctorSeacrhFragment_to_laywerConsultFragment"
+            app:destination="@id/laywerConsultFragment" />
+        <action
+            android:id="@+id/action_doctorSeacrhFragment_to_accountantConsultantFragment"
+            app:destination="@id/accountantConsultantFragment" />
+        <action
+            android:id="@+id/action_doctorSeacrhFragment_to_electricainFragment"
+            app:destination="@id/electricainFragment" />
+        <action
+            android:id="@+id/action_doctorSeacrhFragment_to_mechanicFragment"
+            app:destination="@id/mechanicFragment" />
+        <action
+            android:id="@+id/action_doctorSeacrhFragment_to_plumberFragment"
+            app:destination="@id/plumberFragment" />
+        <action
+            android:id="@+id/action_doctorSeacrhFragment_to_teacherFragment"
+            app:destination="@id/teacherFragment" />
+        <action
+            android:id="@+id/action_doctorSeacrhFragment_to_psychologistFragment"
+            app:destination="@id/psychologistFragment" />
+        <action
+            android:id="@+id/action_doctorSeacrhFragment_to_architectureFragment"
+            app:destination="@id/architectureFragment" />
+        <action
+            android:id="@+id/action_doctorSeacrhFragment_to_notairsFragment"
+            app:destination="@id/notairsFragment" />
+        <action
+            android:id="@+id/action_doctorSeacrhFragment_to_therapistFragment"
+            app:destination="@id/therapistFragment" />
+        <action
+            android:id="@+id/action_doctorSeacrhFragment_to_doctorConsultFragment"
+            app:destination="@id/doctorConsultFragment" />
+        <action
+            android:id="@+id/action_doctorSeacrhFragment_to_labFragment"
+            app:destination="@id/labFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/consultantFragment"
+        android:name="com.prapser.prapser.home.consultant.ConsultantFragment"
+        android:label="fragment_consultant"
+        tools:layout="@layout/fragment_consultant" >
+        <action
+            android:id="@+id/action_consultantFragment_to_onlineFragment"
+            app:destination="@id/onlineFragment" />
+        <action
+            android:id="@+id/action_consultantFragment_to_offlineFragment"
+            app:destination="@id/offlineFragment" />
+        <action
+            android:id="@+id/action_consultantFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/onlineFragment"
+        android:name="com.prapser.prapser.home.consultant.OnlineFragment"
+        android:label="fragment_online"
+        tools:layout="@layout/fragment_online" >
+        <action
+            android:id="@+id/action_onlineFragment_to_consultProfileFragment"
+            app:destination="@id/consultProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/offlineFragment"
+        android:name="com.prapser.prapser.home.consultant.OfflineFragment"
+        android:label="fragment_offline"
+        tools:layout="@layout/fragment_offline" >
+        <action
+            android:id="@+id/action_offlineFragment_to_offlineConsultProfileFragment"
+            app:destination="@id/offlineConsultProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/consultProfileFragment"
+        android:name="com.prapser.prapser.home.consultant.ConsultProfileFragment"
+        android:label="fragment_consult_profile"
+        tools:layout="@layout/fragment_consult_profile" >
+        <action
+            android:id="@+id/action_consultProfileFragment_to_messageFragment2"
+            app:destination="@id/messageFragment2" />
+        <action
+            android:id="@+id/action_consultProfileFragment_to_callFragment"
+            app:destination="@id/callFragment" />
+        <action
+            android:id="@+id/action_consultProfileFragment_to_consultBookFragment"
+            app:destination="@id/consultBookFragment" />
+        <action
+            android:id="@+id/action_consultProfileFragment_to_videoCallFragment"
+            app:destination="@id/videoCallFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageFragment2"
+        android:name="com.prapser.prapser.home.consultant.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" />
+    <fragment
+        android:id="@+id/callFragment"
+        android:name="com.prapser.prapser.home.consultant.CallFragment"
+        android:label="fragment_call"
+        tools:layout="@layout/fragment_call" />
+    <fragment
+        android:id="@+id/consultBookFragment"
+        android:name="com.prapser.prapser.home.consultant.ConsultBookFragment"
+        android:label="fragment_consult_book"
+        tools:layout="@layout/fragment_consult_book" >
+        <action
+            android:id="@+id/action_consultBookFragment_to_bookAppoitmentFragment"
+            app:destination="@id/bookAppoitmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookAppoitmentFragment"
+        android:name="com.prapser.prapser.home.consultant.BookAppoitmentFragment"
+        android:label="fragment_book_appoitment"
+        tools:layout="@layout/fragment_book_appoitment" >
+        <action
+            android:id="@+id/action_bookAppoitmentFragment_to_consultPaymentFragment"
+            app:destination="@id/consultPaymentFragment" />
+        <action
+            android:id="@+id/action_bookAppoitmentFragment_to_EHRFragment"
+            app:destination="@id/EHRFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/consultPaymentFragment"
+        android:name="com.prapser.prapser.home.consultant.ConsultPaymentFragment"
+        android:label="fragment_consult_payment"
+        tools:layout="@layout/fragment_consult_payment" />
+    <fragment
+        android:id="@+id/videoCallFragment"
+        android:name="com.prapser.prapser.home.consultant.VideoCallFragment"
+        android:label="fragment_video_call"
+        tools:layout="@layout/fragment_video_call" />
+    <fragment
+        android:id="@+id/offlineConsultProfileFragment"
+        android:name="com.prapser.prapser.home.consultant.OfflineConsultProfileFragment"
+        android:label="fragment_offline_consult_profile"
+        tools:layout="@layout/fragment_offline_consult_profile" >
+        <action
+            android:id="@+id/action_offlineConsultProfileFragment_to_messageFragment2"
+            app:destination="@id/messageFragment2" />
+        <action
+            android:id="@+id/action_offlineConsultProfileFragment_to_consultBookFragment"
+            app:destination="@id/consultBookFragment" />
+        <action
+            android:id="@+id/action_offlineConsultProfileFragment_to_callFragment"
+            app:destination="@id/callFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/laywerConsultFragment"
+        android:name="com.prapser.prapser.home.consultant.LaywerConsultFragment"
+        android:label="fragment_laywer_consult"
+        tools:layout="@layout/fragment_laywer_consult" >
+        <action
+            android:id="@+id/action_laywerConsultFragment_to_offlineFragment"
+            app:destination="@id/offlineFragment" />
+        <action
+            android:id="@+id/action_laywerConsultFragment_to_onlineFragment"
+            app:destination="@id/onlineFragment" />
+        <action
+            android:id="@+id/action_laywerConsultFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountantConsultantFragment"
+        android:name="com.prapser.prapser.home.consultant.AccountantConsultantFragment"
+        android:label="fragment_accountant_consultant"
+        tools:layout="@layout/fragment_accountant_consultant" >
+        <action
+            android:id="@+id/action_accountantConsultantFragment_to_offlineFragment"
+            app:destination="@id/offlineFragment" />
+        <action
+            android:id="@+id/action_accountantConsultantFragment_to_onlineFragment"
+            app:destination="@id/onlineFragment" />
+        <action
+            android:id="@+id/action_accountantConsultantFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+    <fragment
+        android:id="@id/EHRFragment"
+        android:name="com.prapser.prapser.home.ehr.EHRFragment"
+        android:label="fragment_e_h_r"
+        tools:layout="@layout/fragment_e_h_r" >
+        <action
+            android:id="@+id/action_EHRFragment_to_uploadFileFragment"
+            app:destination="@id/uploadFileFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/electricainFragment"
+        android:name="com.prapser.prapser.home.consultant.ElectricainFragment"
+        android:label="fragment_electricain"
+        tools:layout="@layout/fragment_electricain" >
+        <action
+            android:id="@+id/action_electricainFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mechanicFragment"
+        android:name="com.prapser.prapser.home.consultant.MechanicFragment"
+        android:label="fragment_mechanic"
+        tools:layout="@layout/fragment_mechanic" >
+        <action
+            android:id="@+id/action_mechanicFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plumberFragment"
+        android:name="com.prapser.prapser.home.consultant.PlumberFragment"
+        android:label="fragment_plumber"
+        tools:layout="@layout/fragment_plumber" >
+        <action
+            android:id="@+id/action_plumberFragment_to_plumberProfileFragment"
+            app:destination="@id/plumberProfileFragment" />
+        <action
+            android:id="@+id/action_plumberFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/plumberProfileFragment"
+        android:name="com.prapser.prapser.home.consultant.PlumberProfileFragment"
+        android:label="fragment_plumber_profile"
+        tools:layout="@layout/fragment_plumber_profile" >
+        <action
+            android:id="@+id/action_plumberProfileFragment_to_messageFragment2"
+            app:destination="@id/messageFragment2" />
+        <action
+            android:id="@+id/action_plumberProfileFragment_to_callFragment"
+            app:destination="@id/callFragment" />
+        <action
+            android:id="@+id/action_plumberProfileFragment_to_consultBookFragment"
+            app:destination="@id/consultBookFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/teacherFragment"
+        android:name="com.prapser.prapser.home.consultant.TeacherFragment"
+        android:label="fragment_teacher"
+        tools:layout="@layout/fragment_teacher" >
+        <action
+            android:id="@+id/action_teacherFragment_to_onlineFragment"
+            app:destination="@id/onlineFragment" />
+        <action
+            android:id="@+id/action_teacherFragment_to_offlineFragment"
+            app:destination="@id/offlineFragment" />
+        <action
+            android:id="@+id/action_teacherFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/carWashFragment"
+        android:name="com.prapser.prapser.home.consultant.CarWashFragment"
+        android:label="fragment_car_wash"
+        tools:layout="@layout/fragment_car_wash" >
+        <action
+            android:id="@+id/action_carWashFragment_to_plumberProfileFragment"
+            app:destination="@id/plumberProfileFragment" />
+        <action
+            android:id="@+id/action_carWashFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filtersFragment"
+        android:name="com.prapser.prapser.filters.FiltersFragment"
+        android:label="fragment_filters"
+        tools:layout="@layout/fragment_filters" />
+    <fragment
+        android:id="@+id/psychologistFragment"
+        android:name="com.prapser.prapser.home.consultant.PsychologistFragment"
+        android:label="fragment_psychologist"
+        tools:layout="@layout/fragment_psychologist" >
+        <action
+            android:id="@+id/action_psychologistFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/architectureFragment"
+        android:name="com.prapser.prapser.home.consultant.ArchitectureFragment"
+        android:label="fragment_architecture"
+        tools:layout="@layout/fragment_architecture" >
+        <action
+            android:id="@+id/action_architectureFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notairsFragment"
+        android:name="com.prapser.prapser.home.consultant.NotairsFragment"
+        android:label="fragment_notairs"
+        tools:layout="@layout/fragment_notairs" >
+        <action
+            android:id="@+id/action_notairsFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/salonFragment"
+        android:name="com.prapser.prapser.home.consultant.SalonFragment"
+        android:label="fragment_salon"
+        tools:layout="@layout/fragment_salon" >
+        <action
+            android:id="@+id/action_salonFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/therapistFragment"
+        android:name="com.prapser.prapser.home.consultant.TherapistFragment"
+        android:label="fragment_therapist"
+        tools:layout="@layout/fragment_therapist" >
+        <action
+            android:id="@+id/action_therapistFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.prapser.prapser.home.consultant.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@id/myAppoitnmentFragment"
+        android:name="com.prapser.prapser.home.aapointment.MyAppoitnmentFragment"
+        android:label="fragment_my_appoitnment"
+        tools:layout="@layout/fragment_my_appoitnment" >
+        <action
+            android:id="@+id/action_myAppoitnmentFragment_to_upcomingFragment"
+            app:destination="@id/upcomingFragment" />
+        <action
+            android:id="@+id/action_myAppoitnmentFragment_to_pastFragment"
+            app:destination="@id/pastFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/upcomingFragment"
+        android:name="com.prapser.prapser.home.aapointment.UpcomingFragment"
+        android:label="fragment_upcoming"
+        tools:layout="@layout/fragment_upcoming" />
+    <fragment
+        android:id="@+id/pastFragment"
+        android:name="com.prapser.prapser.home.aapointment.PastFragment"
+        android:label="fragment_past"
+        tools:layout="@layout/fragment_past" />
+    <fragment
+        android:id="@+id/uploadFileFragment"
+        android:name="com.prapser.prapser.home.ehr.UploadFileFragment"
+        android:label="fragment_upload_file"
+        tools:layout="@layout/fragment_upload_file" />
+    <fragment
+        android:id="@+id/doctorConsultFragment"
+        android:name="com.prapser.prapser.home.doctor.DoctorConsultFragment"
+        android:label="fragment_doctor_consult"
+        tools:layout="@layout/fragment_doctor_consult" >
+        <action
+            android:id="@+id/action_doctorConsultFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorOfficeFragment"
+        android:name="com.prapser.prapser.home.doctor.DoctorOfficeFragment"
+        android:label="fragment_doctor_office"
+        tools:layout="@layout/fragment_doctor_office" >
+        <action
+            android:id="@+id/action_doctorOfficeFragment_to_offlineConsultProfileFragment"
+            app:destination="@id/offlineConsultProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doctorOnlineFragment"
+        android:name="com.prapser.prapser.home.doctor.DoctorOnlineFragment"
+        android:label="fragment_doctor_online"
+        tools:layout="@layout/fragment_doctor_online" />
+    <fragment
+        android:id="@+id/doctorOnlineConsultFragment"
+        android:name="com.prapser.prapser.home.doctor.DoctorOnlineConsultFragment"
+        android:label="fragment_doctor_online_consult"
+        tools:layout="@layout/fragment_doctor_online_consult" >
+        <action
+            android:id="@+id/action_doctorOnlineConsultFragment_to_consultProfileFragment"
+            app:destination="@id/consultProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/labFragment"
+        android:name="com.prapser.prapser.home.consultant.LabFragment"
+        android:label="fragment_lab"
+        tools:layout="@layout/fragment_lab" >
+        <action
+            android:id="@+id/action_labFragment_to_offlineConsultProfileFragment"
+            app:destination="@id/offlineConsultProfileFragment" />
+        <action
+            android:id="@+id/action_labFragment_to_filtersFragment"
+            app:destination="@id/filtersFragment" />
+    </fragment>
+    <fragment
+        android:id="@id/settingFragment"
+        android:name="com.prapser.prapser.home.setting.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_referFriendFragment"
+            app:destination="@id/referFriendFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_walletFragment"
+            app:destination="@id/walletFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_termAndConditionFragment"
+            app:destination="@id/termAndConditionFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_myAppoitnmentFragment"
+            app:destination="@id/myAppoitnmentFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_allMessageFragment"
+            app:destination="@id/allMessageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/referFriendFragment"
+        android:name="com.prapser.prapser.home.setting.ReferFriendFragment"
+        android:label="fragment_refer_friend"
+        tools:layout="@layout/fragment_refer_friend" />
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="com.prapser.prapser.home.setting.WalletFragment"
+        android:label="fragment_wallet"
+        tools:layout="@layout/fragment_wallet" />
+    <fragment
+        android:id="@+id/termAndConditionFragment"
+        android:name="com.prapser.prapser.home.setting.report.TermAndConditionFragment"
+        android:label="fragment_term_and_condition"
+        tools:layout="@layout/fragment_term_and_condition" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.prapser.prapser.home.setting.report.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" >
+        <action
+            android:id="@+id/action_reportFragment_to_addReportFragment"
+            app:destination="@id/addReportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addReportFragment"
+        android:name="com.prapser.prapser.home.setting.report.AddReportFragment"
+        android:label="fragment_add_report"
+        tools:layout="@layout/fragment_add_report" />
+    <fragment
+        android:id="@+id/allMessageFragment"
+        android:name="com.prapser.prapser.home.setting.report.AllMessageFragment"
+        android:label="fragment_all_message"
+        tools:layout="@layout/fragment_all_message" >
+        <action
+            android:id="@+id/action_allMessageFragment_to_messageFragment2"
+            app:destination="@id/messageFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/labConsultFragment"
+        android:name="com.prapser.prapser.LabConsultFragment"
+        android:label="fragment_lab_consult"
+        tools:layout="@layout/fragment_lab_consult" >
+        <action
+            android:id="@+id/action_labConsultFragment_to_offlineConsultProfileFragment"
+            app:destination="@id/offlineConsultProfileFragment" />
+    </fragment>
+</navigation>

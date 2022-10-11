@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".home.consultant.ConsultBookFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:tint="@color/black"
+            android:src="@drawable/back_arrow"/>
+
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            style="@style/textHeadingBold"
+            android:fontFamily="@font/human"
+            android:text="@string/select_time_slot"/>
+
+
+        <TextView
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/human"
+            android:textColor="@color/appcolor"
+            android:layout_marginHorizontal="@dimen/text20"
+            style="@style/textHeadingBold"
+            android:text="@string/today"/>
+
+
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/space10"
+                app:cardCornerRadius="@dimen/space8"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/text18">
+
+
+                    <com.applandeo.materialcalendarview.CalendarView
+                        android:id="@+id/calendarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        app:headerColor="@color/appcolor"
+                        app:headerLabelColor="@color/white"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:selectionColor="@color/appcolor"
+                        app:todayLabelColor="@color/appcolor"
+                        app:type="one_day_picker" />
+
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space4">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/textNormal"
+                    android:fontFamily="@font/human"
+                    android:layout_marginHorizontal="@dimen/space8"
+                    android:text="@string/working_address"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/appcolor"
+                    android:fontFamily="@font/human"
+                    android:layout_marginHorizontal="@dimen/space10"
+                    app:drawableTint="@color/appcolor"
+                    style="@style/textNormal"
+                    android:drawableRight="@drawable/ic_baseline_location_on_24"
+                    android:text="-25.5 km "/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textHeading"
+                android:fontFamily="@font/human"
+                android:layout_marginHorizontal="@dimen/space8"
+                android:text="Omninos International"/>
+
+            <include layout="@layout/line_with_margin"/>
+                
+            <RelativeLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space8">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    style="@style/textHeading"
+                    android:fontFamily="@font/human"
+                    android:text="Morning 8 AM -12 PM"/>
+                <ImageView
+                    android:layout_width="@dimen/text24"
+                    android:layout_height="@dimen/text24"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_baseline_arrow_drop_down_24"/>
+            </RelativeLayout>
+            <include layout="@layout/line_with_margin"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/time_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/time_list"
+                android:orientation="vertical"
+                app:spanCount="4"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+
+            <include layout="@layout/line_with_margin"/>
+                
+            <RelativeLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space8">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    style="@style/textHeading"
+                    android:fontFamily="@font/human"
+                    android:text="Afternoon 8 -4 PM"/>
+                <ImageView
+                    android:layout_width="@dimen/text24"
+                    android:layout_height="@dimen/text24"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_baseline_arrow_drop_down_24"/>
+            </RelativeLayout>
+            <include layout="@layout/line_with_margin"/>
+            <include layout="@layout/line_with_margin"/>
+                
+            <RelativeLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space8">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    style="@style/textHeading"
+                    android:fontFamily="@font/human"
+                    android:text="Evening 4-8 PM"/>
+                <ImageView
+                    android:layout_width="@dimen/text24"
+                    android:layout_height="@dimen/text24"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_baseline_arrow_drop_down_24"/>
+            </RelativeLayout>
+            <include layout="@layout/line_with_margin"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/contnue_btn"
+                android:elevation="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/card"
+                android:fontFamily="@font/human"
+                android:background="@drawable/round_btn_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginHorizontal="@dimen/space25"
+                android:layout_marginBottom="@dimen/space10"
+                android:textColor="@color/white"
+                android:text="Continue" />
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>
